@@ -1,10 +1,7 @@
 package iteration
 
-func Repeat(a string, times int) string {
-	var repeated string
+import "strings"
 
-	for i := 0; i < times; i++ {
-		repeated += a
-	}
-	return repeated
+func Repeat(a string, times int) string {
+	return strings.Repeat(a, times)
 }
